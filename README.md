@@ -5,7 +5,6 @@ A Starter Repository for the [Rock Paper Scissors Exercise](https://github.com/p
 ## Setup
 
 Create a virtual environment:
-
 ```sh
 conda create -n rps-env python=3.8
 ```
