@@ -6,12 +6,14 @@ def RPS():
 # ASK FOR USER INPUT
     print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
     user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ").lower()
+    print("User Chose:", user_choice)  # figure out how to gracefully leave
+
 
 # VALIDATIONS
-    if user_choice = str("rock")
-        print("User Chose:", user_choice)  # figure out how to gracefully leave
-    else
+    answers = ["rock", "paper", "scissors"]
+    if user_choice not in answers:
         print("Sorry, your input was not valid. Please try again!")
+        quit()
 
 # COMPUTER CHOICE
     import random
