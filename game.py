@@ -3,10 +3,9 @@ def RPS():
 # this is the "game.py" file...
     import os
     player_name = os.getenv("PLAYER_NAME", default="Player One")
-    #NEED TO WRITE IN README
 
 # ASK FOR USER INPUT
-    print("Welcome" + player_name + "to my Rock-Paper-Scissors game...")
+    print("Welcome", player_name, "to my Rock-Paper-Scissors game...")
     user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ").lower()
     print("User Chose:", user_choice)
 
