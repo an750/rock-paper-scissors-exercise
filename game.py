@@ -2,7 +2,6 @@
 import os
 
 # DETERMINE THE WINNER / FINAL RESULTS
-
 def determine_winner(user_choice, computer_choice):
     hold_winner = ""
     if user_choice == "rock" and computer_choice == "paper":
