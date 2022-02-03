@@ -12,25 +12,29 @@ def determine_winner(user_choice, computer_choice):
     elif user_choice == "paper" and computer_choice == "scissors":
         print("Computer Chose:", computer_choice)
         print("You lose!")
+        hold_winner = 'scissors'
     elif user_choice == "scissors" and computer_choice == "rock":
         print("Computer Chose:", computer_choice)
         print("You lose!")
+        hold_winner = 'rock'
     elif user_choice == "paper" and computer_choice == "rock":
         print("Computer Chose:", computer_choice)
         print("You Win!")
+        hold_winner = 'paper'
     elif user_choice == "rock" and computer_choice == "scissors":
         print("Computer Chose:", computer_choice)
         print("You Win!")
+        hold_winner = 'rock'
     elif user_choice == "scissors" and computer_choice == "paper":
         print("Computer Chose:", computer_choice)
         print("You Win!")
+        hold_winner = 'scissors'
     elif user_choice == computer_choice:
         print("Computer Chose:", computer_choice)
         print("It's a tie!")
+        hold_winner = None
 
     return hold_winner
-
-    #return determine_winner()
 
 if __name__ == "__main__":
     player_name = os.getenv("PLAYER_NAME", default="Player One")
