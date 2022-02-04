@@ -37,5 +37,9 @@ Run tests:
 pytest
 ```
 
-## Pass environment variable to the script during runtime:
+## Environment Variable
+
+Pass to the script during runtime:
+```sh
 PLAYER_NAME="Jon Snow" python game.py
+```
